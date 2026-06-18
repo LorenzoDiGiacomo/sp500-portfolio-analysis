@@ -27,7 +27,7 @@ jobs:
           cache: pip
 
       - name: Installa dipendenze
-        run: pip install --quiet yfinance pandas matplotlib
+        run: pip install --quiet -r requirements.txt
 
       - name: Rigenera analisi e grafici
         run: python analysis/update_data.py
