@@ -1,0 +1,48 @@
+name: Aggiornamento mensile S&P 500
+
+# Rigenera dati, metriche e grafici una volta al mese e aggiorna il sito (GitHub Pages).
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # ogni 1° del mese, 06:00 UTC
+  workflow_dispatch: {}     # esecuzione manuale on-demand dalla tab "Actions"
+
+permissions:
+  contents: write           # serve per fare commit/push dei file rigenerati
+
+concurrency:
+  group: monthly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Installa dipendenze
+        run: pip install --quiet yfinance pandas matplotlib
+
+      - name: Rigenera analisi e grafici
+        run: python analysis/update_data.py
+
+      - name: Commit e push se ci sono aggiornamenti
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # versiona solo gli output tracciati (i CSV grezzi sono in .gitignore)
+          git add presentation/assets data/metrics.json
+          if git diff --cached --quiet; then
+            echo "Nessun cambiamento: dati gia' aggiornati."
+          else
+            DATA=$(date -u +'%d/%m/%Y')
+            git commit -m "chore: aggiornamento automatico dati S&P 500 ($DATA) [skip ci]"
+            git push
+            echo "Sito aggiornato."
+          fi
