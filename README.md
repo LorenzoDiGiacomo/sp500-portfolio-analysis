@@ -5,7 +5,8 @@ dell'S&P 500, calcola le metriche e rigenera i grafici; la presentazione HTML li
 mostra e si aggiorna da sola.
 
 **Portfolio:**
-[📊 Kaggle Notebook](https://www.kaggle.com/code/lorenzodigiacomo13/s-p-500-long-term-analysis-recommendations)
+[🌐 Presentazione live](https://lorenzodigiacomo.github.io/sp500-portfolio-analysis/)
+· [📊 Kaggle Notebook](https://www.kaggle.com/code/lorenzodigiacomo13/s-p-500-long-term-analysis-recommendations)
 · [🗂️ Kaggle Dataset](https://www.kaggle.com/datasets/lorenzodigiacomo13/s-p-500-index-long-term-analysis-data)
 
 ## Uso rapido
