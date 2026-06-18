@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="590.390156pt" height="293.420875pt" viewBox="0 0 590.390156 293.420875" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-18T20:47:10.319120</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 293.420875 
+L 590.390156 293.420875 
+L 590.390156 0 
+L 0 0 
+z
+" style="fill: #faf8f3"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 53.090156 286.220875 
+L 583.190156 286.220875 
+L 583.190156 31.196875 
+L 53.090156 31.196875 
+z
+" style="fill: #faf8f3"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 53.090156 42.788875 
+L 420.674443 42.788875 
+L 420.674443 73.028875 
+L 53.090156 73.028875 
+z
+" clip-path="url(#pd577a99981)" style="fill: #b6892b"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 53.090156 93.188875 
+L 477.925419 93.188875 
+L 477.925419 123.428875 
+L 53.090156 123.428875 
+z
+" clip-path="url(#pd577a99981)" style="fill: #b6892b"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 53.090156 143.588875 
+L 523.3482 143.588875 
+L 523.3482 173.828875 
+L 53.090156 173.828875 
+z
+" clip-path="url(#pd577a99981)" style="fill: #b6892b"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 53.090156 193.988875 
+L 564.163636 193.988875 
+L 564.163636 224.228875 
+L 53.090156 224.228875 
+z
+" clip-path="url(#pd577a99981)" style="fill: #b6892b"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 53.090156 244.388875 
+L 564.639467 244.388875 
+L 564.639467 274.628875 
+L 53.090156 274.628875 
+z
+" clip-path="url(#pd577a99981)" style="fill: #b6892b"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="fill: #8a8f98; font: 13px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="49.590156" y="62.550281" transform="rotate(-0 49.590156 62.550281)">1 anno</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="fill: #8a8f98; font: 13px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="49.590156" y="112.950281" transform="rotate(-0 49.590156 112.950281)">5 anni</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="fill: #8a8f98; font: 13px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="49.590156" y="163.350281" transform="rotate(-0 49.590156 163.350281)">10 anni</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="fill: #8a8f98; font: 13px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="49.590156" y="213.750281" transform="rotate(-0 49.590156 213.750281)">15 anni</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="fill: #8a8f98; font: 13px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="49.590156" y="264.150281" transform="rotate(-0 49.590156 264.150281)">20 anni</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_6">
+    <text style="fill: #ffffff; font: 700 12px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="410.072443" y="61.011062" transform="rotate(-0 410.072443 61.011062)">69%</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #ffffff; font: 700 12px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="467.323419" y="111.411062" transform="rotate(-0 467.323419 111.411062)">80%</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #ffffff; font: 700 12px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="512.7462" y="161.811062" transform="rotate(-0 512.7462 161.811062)">89%</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #ffffff; font: 700 12px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="553.561636" y="212.211062" transform="rotate(-0 553.561636 212.211062)">96%</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #ffffff; font: 700 12px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="554.037467" y="262.611063" transform="rotate(-0 554.037467 262.611063)">97%</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #8a8f98; font: 14px 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="53.090156" y="17.196875" transform="rotate(-0 53.090156 17.196875)">Probabilita' storica di chiudere in positivo, per orizzonte</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd577a99981">
+   <rect x="53.090156" y="31.196875" width="530.1" height="255.024"/>
+  </clipPath>
+ </defs>
+</svg>

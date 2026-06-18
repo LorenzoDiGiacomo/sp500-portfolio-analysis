@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Cache dati grezzi (rigenerabili con ./refresh.sh) — i risultati elaborati (metrics.json
+# e i grafici SVG) restano versionati così il deck è visibile senza eseguire nulla.
+data/*_daily.csv
+
+# Tooling locale / OS
+.claude/
+.DS_Store
+
+# File dati del Kaggle Dataset (rigenerati da kaggle/build_dataset.py)
+kaggle/dataset/*.csv
+kaggle/dataset/metrics.json
+
+# Credenziali (non devono MAI finire nel repo)
+kaggle.json
+*.pem

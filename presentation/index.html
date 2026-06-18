@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S&P 500 — Investment Research</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<div class="deck" id="deck">
+
+  <!-- 1. COVER -->
+  <section class="slide cover active">
+    <div class="inner">
+      <div class="eyebrow">Investment Research · Portfolio Advisory</div>
+      <h1>S&amp;P 500</h1>
+      <div class="sub">Cos'&egrave;, come si &egrave; comportato nel tempo<br>e cosa ne ricaviamo per i portafogli dei clienti.</div>
+      <div class="meta">
+        Dati aggiornati al <b data-m="last_date"></b> · serie storica dal <span data-m="first_date"></span>
+        &nbsp;·&nbsp; Fonte: S&amp;P 500 (^GSPC), Yahoo Finance
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. COS'E' -->
+  <section class="slide">
+    <div class="inner">
+      <div class="eyebrow">Il punto di partenza</div>
+      <h2>Cos'&egrave; l'<span class="accent">S&amp;P 500</span></h2>
+      <p class="lead">Un indice che misura l'andamento delle circa 500 maggiori societ&agrave; quotate
+        statunitensi. &Egrave; il riferimento pi&ugrave; usato al mondo per rappresentare il mercato azionario USA.</p>
+      <div class="facts">
+        <div class="fact"><div class="k">~500</div><div class="t">grandi aziende USA, da pi&ugrave; settori: tecnologia, salute, finanza, consumi, energia.</div></div>
+        <div class="fact"><div class="k">Ponderato</div><div class="t">per capitalizzazione: le aziende pi&ugrave; grandi pesano di pi&ugrave;. Si ribilancia da solo.</div></div>
+        <div class="fact"><div class="k">Diversificato</div><div class="t">un solo strumento espone a centinaia di aziende: il rischio del singolo titolo si diluisce.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ANDAMENTO STORICO -->
+  <section class="slide">
+    <div class="inner">
+      <div class="cols">
+        <div class="text">
+          <div class="eyebrow">Andamento storico</div>
+          <h2>Una crescita di lungo periodo</h2>
+          <p class="lead">Nonostante guerre, recessioni e crisi, sul lungo periodo l'indice
+            ha sempre superato i massimi precedenti.</p>
+          <div class="metrics">
+            <div class="metric"><div class="num gold">$<span data-m="growth_100" data-fmt="int0"></span></div>
+              <div class="lbl">da $100 investiti nel <span data-m="first_date"></span></div></div>
+            <div class="metric"><div class="num">+<span data-m="cagr" data-fmt="pct1"></span></div>
+              <div class="lbl">rendimento medio annuo</div></div>
+          </div>
+        </div>
+        <div class="chart">
+          <img src="assets/price_log.svg" alt="Andamento storico S&amp;P 500">
+          <div class="cap">Scala logaritmica: ogni tacca rappresenta una crescita proporzionale.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. IL PESO DEI DIVIDENDI (prezzo vs total return) -->
+  <section class="slide">
+    <div class="inner">
+      <div class="cols">
+        <div class="text">
+          <div class="eyebrow">Prezzo vs rendimento totale</div>
+          <h2>I <span class="accent">dividendi</span><br>cambiano il risultato</h2>
+          <p class="lead">L'indice di prezzo ignora i dividendi. Reinvestendoli, dal
+            <span data-m="tr.start_year"></span> il capitale finale &egrave; pi&ugrave; che raddoppiato.</p>
+          <div class="metrics">
+            <div class="metric"><div class="num gold">$<span data-m="tr.tr_growth100" data-fmt="int0"></span></div>
+              <div class="lbl">con dividendi (da $100)</div></div>
+            <div class="metric"><div class="num"><span data-m="tr.price_growth100" data-fmt="int0"></span></div>
+              <div class="lbl">solo prezzo</div></div>
+            <div class="metric"><div class="num gain">+<span data-m="tr.dividend_cagr" data-fmt="pct1"></span></div>
+              <div class="lbl">all'anno dai dividendi</div></div>
+          </div>
+        </div>
+        <div class="chart">
+          <img src="assets/price_vs_tr.svg" alt="Prezzo vs total return S&amp;P 500">
+          <div class="cap">Rendimento totale annuo <span data-m="tr.tr_cagr" data-fmt="pct1"></span> contro <span data-m="tr.price_cagr" data-fmt="pct1"></span> del solo prezzo.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. RISCHIO / DRAWDOWN -->
+  <section class="slide">
+    <div class="inner">
+      <div class="cols">
+        <div class="text">
+          <div class="eyebrow">L'altra faccia: il rischio</div>
+          <h2>Le cadute fanno parte<br>del percorso</h2>
+          <p class="lead">Il rendimento non &egrave; gratis: cali profondi sono ricorrenti.
+            Vanno messi in conto, non temuti.</p>
+          <div class="metrics">
+            <div class="metric"><div class="num loss"><span data-m="max_dd" data-fmt="pct0abs"></span></div>
+              <div class="lbl">caduta massima (<span data-m="max_dd_year"></span>)</div></div>
+            <div class="metric"><div class="num"><span data-m="vol" data-fmt="pct0"></span></div>
+              <div class="lbl">volatilit&agrave; annua</div></div>
+          </div>
+        </div>
+        <div class="chart">
+          <img src="assets/drawdown.svg" alt="Drawdown S&amp;P 500">
+          <div class="cap">Distanza percentuale dal massimo precedente, nel tempo.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. RENDIMENTI ANNUI -->
+  <section class="slide">
+    <div class="inner">
+      <div class="cols">
+        <div class="text">
+          <div class="eyebrow">Anno per anno</div>
+          <h2>Pi&ugrave; anni positivi<br>che negativi</h2>
+          <p class="lead">I singoli anni sono imprevedibili, ma la maggioranza si chiude in guadagno.</p>
+          <div class="metrics">
+            <div class="metric"><div class="num gain"><span data-m="pct_positive_years" data-fmt="pct0"></span></div>
+              <div class="lbl">anni chiusi in positivo</div></div>
+            <div class="metric"><div class="num gain">+<span data-m="best_year_ret" data-fmt="pct0"></span></div>
+              <div class="lbl">migliore (<span data-m="best_year"></span>)</div></div>
+            <div class="metric"><div class="num loss"><span data-m="worst_year_ret" data-fmt="pct0"></span></div>
+              <div class="lbl">peggiore (<span data-m="worst_year"></span>)</div></div>
+          </div>
+        </div>
+        <div class="chart">
+          <img src="assets/annual_returns.svg" alt="Rendimenti annui S&amp;P 500">
+          <div class="cap">Verde: anno positivo · Rosso: anno negativo.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ORIZZONTE -->
+  <section class="slide">
+    <div class="inner">
+      <div class="cols">
+        <div class="text">
+          <div class="eyebrow">L'idea chiave</div>
+          <h2>L'<span class="accent">orizzonte temporale</span><br>cambia tutto</h2>
+          <p class="lead">Pi&ugrave; a lungo si resta investiti, pi&ugrave; alta &egrave; storicamente
+            la probabilit&agrave; di chiudere in guadagno.</p>
+          <div class="metrics">
+            <div class="metric"><div class="num"><span data-m="horizons.1 anno.pct_positive" data-fmt="pct0"></span></div>
+              <div class="lbl">su 1 anno</div></div>
+            <div class="metric"><div class="num gain"><span data-m="horizons.20 anni.pct_positive" data-fmt="pct0"></span></div>
+              <div class="lbl">su 20 anni</div></div>
+          </div>
+        </div>
+        <div class="chart">
+          <img src="assets/horizons.svg" alt="Probabilit&agrave; di rendimento positivo per orizzonte">
+          <div class="cap">Quota di periodi storici chiusi in positivo, per durata dell'investimento.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. ASSET CLASS A CONFRONTO -->
+  <section class="slide">
+    <div class="inner">
+      <div class="cols">
+        <div class="text">
+          <div class="eyebrow">Il contesto di portafoglio</div>
+          <h2>S&amp;P 500 e le altre<br><span class="accent">asset class</span></h2>
+          <p class="lead">Dal <span data-m="assets.start_year"></span>, l'azionario &egrave; il
+            principale motore di crescita; obbligazioni e liquidit&agrave; danno stabilit&agrave;
+            a costo di un rendimento minore.</p>
+          <table class="atable">
+            <thead><tr><th>Asset class</th><th>Rend. annuo</th><th>Volatilit&agrave;</th></tr></thead>
+            <tbody>
+              <tr><td><span class="dot" style="background:#b6892b"></span>Azionario (S&amp;P 500)</td>
+                <td class="cagr"><span data-m="assets.items.Azionario (S&P 500).cagr" data-fmt="pct1"></span></td>
+                <td><span data-m="assets.items.Azionario (S&P 500).vol" data-fmt="pct0"></span></td></tr>
+              <tr><td><span class="dot" style="background:#7a8450"></span>Oro</td>
+                <td class="cagr"><span data-m="assets.items.Oro.cagr" data-fmt="pct1"></span></td>
+                <td><span data-m="assets.items.Oro.vol" data-fmt="pct0"></span></td></tr>
+              <tr><td><span class="dot" style="background:#3f6f8f"></span>Obbligazioni</td>
+                <td class="cagr"><span data-m="assets.items.Obbligazioni.cagr" data-fmt="pct1"></span></td>
+                <td><span data-m="assets.items.Obbligazioni.vol" data-fmt="pct0"></span></td></tr>
+              <tr><td><span class="dot" style="background:#aba499"></span>Liquidit&agrave;</td>
+                <td class="cagr"><span data-m="assets.items.Liquidità.cagr" data-fmt="pct1"></span></td>
+                <td><span data-m="assets.items.Liquidità.vol" data-fmt="pct0"></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="chart">
+          <img src="assets/assets.svg" alt="Confronto asset class">
+          <div class="cap">Crescita di $100 investiti nel <span data-m="assets.start_year"></span>. Fonte: ETF rappresentativi (SPY, AGG, GLD, BIL).</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. RACCOMANDAZIONI -->
+  <section class="slide">
+    <div class="inner">
+      <div class="eyebrow">La nostra posizione</div>
+      <h2>Raccomandazioni</h2>
+      <div class="recos">
+        <div class="reco"><div class="n">01</div><div>
+          <div class="rt">Esposizione core all'S&amp;P 500, con orizzonte di almeno 10 anni</div>
+          <div class="rd">Su orizzonti lunghi la probabilit&agrave; storica di guadagno sale oltre il
+            <b data-m="horizons.10 anni.pct_positive" data-fmt="pct0"></b>. &Egrave; il cuore stabile del portafoglio, non una scommessa di breve.</div>
+        </div></div>
+        <div class="reco"><div class="n">02</div><div>
+          <div class="rt">Investire in modo regolare, non cercare il momento perfetto</div>
+          <div class="rd">Versamenti periodici (PAC) riducono il rischio di entrare al picco e trasformano
+            la volatilit&agrave; in opportunit&agrave; di acquisto. Il tempo nel mercato batte il tempismo sul mercato.</div>
+        </div></div>
+        <div class="reco"><div class="n">03</div><div>
+          <div class="rt">Mettere in conto le cadute, senza disinvestire nel panico</div>
+          <div class="rd">Cali del 20–30% sono fisiologici e finora sempre recuperati. La disciplina nei
+            ribassi &egrave; il principale fattore di rendimento reale per il cliente.</div>
+        </div></div>
+        <div class="reco"><div class="n">04</div><div>
+          <div class="rt">Dimensionare il peso azionario sul profilo di rischio</div>
+          <div class="rd">L'S&amp;P 500 &egrave; il motore di crescita, da affiancare a obbligazioni e liquidit&agrave;
+            in base all'orizzonte e alla tolleranza alle perdite di ciascun cliente.</div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CHIUSURA -->
+  <section class="slide">
+    <div class="inner">
+      <div class="eyebrow">In sintesi</div>
+      <h2>Crescita nel lungo periodo,<br>disciplina nel breve.</h2>
+      <hr class="hairline">
+      <p class="note" style="max-width:60ch">
+        L'S&amp;P 500 ha premiato storicamente gli investitori pazienti e diversificati.
+        Il nostro ruolo &egrave; allineare orizzonte, rischio e aspettative di ogni cliente.
+      </p>
+      <p class="fresh" style="margin-top:2.2rem">
+        Analisi rigenerata automaticamente · ultimo aggiornamento <b data-m="generated_at"></b>
+      </p>
+      <p class="note" style="margin-top:1.6rem; font-size:.74rem; color:#a8aab0; max-width:70ch">
+        Nota: l'indice di prezzo non include i dividendi; il rendimento totale reinvestito &egrave; superiore.
+        I rendimenti passati non sono garanzia di risultati futuri. Documento a fini informativi, non consulenza personalizzata.
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<div class="brand">Investment Research</div>
+<div class="dots" id="dots"></div>
+<div class="counter"><b id="cur">1</b> / <span id="tot">10</span></div>
+
+<script src="assets/data.js"></script>
+<script src="deck.js"></script>
+</body>
+</html>

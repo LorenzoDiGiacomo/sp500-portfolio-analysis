@@ -1,0 +1,125 @@
+/* ------------------------------------------------------------------ *
+ *  S&P 500 — Investment Research deck
+ *  Stile: "Ink & Gold" — minimalista, essenziale, istituzionale.
+ * ------------------------------------------------------------------ */
+:root {
+  --paper:  #faf8f3;
+  --ink:    #1f2328;
+  --muted:  #8a8f98;
+  --gold:   #b6892b;
+  --gain:   #2f7d5b;
+  --loss:   #b0413e;
+  --line:   #e7e3da;
+  --maxw:   1100px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+/* ---------- struttura slide ---------- */
+.deck { height: 100vh; width: 100vw; position: relative; }
+
+.slide {
+  position: absolute; inset: 0;
+  display: none;
+  padding: 5.5vh 7vw;
+  opacity: 0;
+  transition: opacity .45s ease;
+}
+.slide.active { display: flex; opacity: 1; }
+.slide > .inner {
+  margin: auto; width: 100%; max-width: var(--maxw);
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+/* ---------- tipografia ---------- */
+.eyebrow {
+  font-size: .72rem; letter-spacing: .28em; text-transform: uppercase;
+  color: var(--gold); font-weight: 500; margin-bottom: 1.4rem;
+}
+h1 { font-weight: 200; font-size: 3.4rem; line-height: 1.07; letter-spacing: -.02em; }
+h2 { font-weight: 200; font-size: 2.4rem; line-height: 1.12; letter-spacing: -.01em; margin-bottom: 1.6rem; }
+h2 .accent { color: var(--gold); }
+.lead { font-size: 1.25rem; line-height: 1.6; color: #3c4147; font-weight: 300; max-width: 46ch; }
+p.note { color: var(--muted); font-size: .92rem; line-height: 1.5; }
+.hairline { width: 56px; height: 2px; background: var(--gold); margin: 1.8rem 0; border: 0; }
+
+/* ---------- cover ---------- */
+.cover .inner { gap: 0; }
+.cover h1 { font-size: 4.2rem; }
+.cover .sub { margin-top: 1.6rem; font-size: 1.15rem; color: #3c4147; }
+.cover .meta { margin-top: 3.2rem; font-size: .82rem; letter-spacing: .04em; color: var(--muted); }
+
+/* ---------- layout a due colonne (testo + grafico) ---------- */
+.cols { display: grid; grid-template-columns: 0.92fr 1.35fr; gap: 4vw; align-items: center; }
+.cols .text { display: flex; flex-direction: column; }
+.chart { width: 100%; }
+.chart img, .chart object { width: 100%; height: auto; display: block; }
+.chart .cap { margin-top: .7rem; color: var(--muted); font-size: .82rem; }
+
+/* ---------- metriche ---------- */
+.metrics { display: flex; gap: 3rem; flex-wrap: wrap; margin-top: 1.4rem; }
+.metric .num { font-size: 2.5rem; font-weight: 200; letter-spacing: -.02em; line-height: 1; }
+.metric .num.gain { color: var(--gain); }
+.metric .num.loss { color: var(--loss); }
+.metric .num.gold { color: var(--gold); }
+.metric .lbl { margin-top: .5rem; font-size: .78rem; letter-spacing: .04em;
+               text-transform: uppercase; color: var(--muted); }
+
+/* ---------- elenco "cos'e'" ---------- */
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4rem; margin-top: 2.4rem; }
+.fact { border-top: 1px solid var(--line); padding-top: 1.1rem; }
+.fact .k { color: var(--gold); font-size: 1.6rem; font-weight: 200; }
+.fact .t { margin-top: .5rem; font-size: .95rem; line-height: 1.5; color: #3c4147; }
+
+/* ---------- tabella rischio/rendimento ---------- */
+.atable { width: 100%; border-collapse: collapse; margin-top: 1.4rem; }
+.atable th, .atable td { text-align: right; padding: .55rem .2rem; border-bottom: 1px solid var(--line);
+                         font-weight: 300; font-size: .98rem; }
+.atable th { color: var(--muted); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase;
+             border-bottom: 1px solid var(--muted); }
+.atable td:first-child, .atable th:first-child { text-align: left; }
+.atable .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: .55rem;
+               vertical-align: middle; }
+.atable .cagr { color: var(--ink); }
+
+/* ---------- raccomandazioni ---------- */
+.recos { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.8rem; }
+.reco { display: grid; grid-template-columns: 2.4rem 1fr; gap: 1.3rem; align-items: start;
+        border-top: 1px solid var(--line); padding-top: 1.3rem; }
+.reco .n { font-size: 1.1rem; color: var(--gold); font-weight: 400; padding-top: .15rem; }
+.reco .rt { font-size: 1.2rem; font-weight: 400; margin-bottom: .35rem; }
+.reco .rd { color: #3c4147; font-size: .98rem; line-height: 1.55; max-width: 70ch; }
+
+/* ---------- navigazione / cromo ---------- */
+.progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--gold);
+            width: 0; transition: width .35s ease; z-index: 20; }
+.counter { position: fixed; bottom: 1.6rem; right: 2rem; font-size: .78rem;
+           letter-spacing: .12em; color: var(--muted); z-index: 20; }
+.counter b { color: var(--ink); font-weight: 400; }
+.brand { position: fixed; bottom: 1.6rem; left: 2rem; font-size: .72rem;
+         letter-spacing: .22em; text-transform: uppercase; color: var(--muted); z-index: 20; }
+.dots { position: fixed; bottom: 1.55rem; left: 50%; transform: translateX(-50%);
+        display: flex; gap: .55rem; z-index: 20; }
+.dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line);
+          cursor: pointer; transition: background .2s, transform .2s; }
+.dots i.on { background: var(--gold); transform: scale(1.25); }
+
+.fresh { font-size: .72rem; color: var(--muted); letter-spacing: .04em; }
+.fresh b { color: var(--gold); font-weight: 500; }
+
+@media (max-width: 760px) {
+  .cols, .facts { grid-template-columns: 1fr; gap: 2rem; }
+  h1, .cover h1 { font-size: 2.4rem; }
+  h2 { font-size: 1.7rem; }
+  .metrics { gap: 1.6rem; }
+}

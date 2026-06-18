@@ -1,0 +1,13 @@
+{
+  "id": "lorenzodigiacomo13/s-p-500-long-term-analysis-recommendations",
+  "title": "S&P 500 Long-Term Analysis & Recommendations",
+  "code_file": "sp500-long-term-analysis.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["lorenzodigiacomo13/s-p-500-index-long-term-analysis-data"],
+  "competition_sources": [],
+  "kernel_sources": []
+}
