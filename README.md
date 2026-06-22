@@ -6,6 +6,7 @@ mostra e si aggiorna da sola.
 
 **Portfolio:**
 [🌐 Presentazione live](https://lorenzodigiacomo.github.io/sp500-portfolio-analysis/)
+· [📄 PDF da inviare](https://lorenzodigiacomo.github.io/sp500-portfolio-analysis/presentation/SP500_Investment_Research.pdf)
 · [📊 Kaggle Notebook](https://www.kaggle.com/code/lorenzodigiacomo13/s-p-500-long-term-analysis-recommendations)
 · [🗂️ Kaggle Dataset](https://www.kaggle.com/datasets/lorenzodigiacomo13/s-p-500-index-long-term-analysis-data)
 
@@ -31,6 +32,14 @@ Frecce ← → (o spazio / clic) per navigare; i pallini in basso saltano alle s
 
 > Ogni volta che lanci `./refresh.sh` e ricarichi la pagina, numeri e grafici
 > riflettono l'ultimo dato di mercato. Non si tocca nulla a mano.
+
+**3. (Opzionale) Genera il PDF da inviare:**
+
+```bash
+.venv/bin/python analysis/build_pdf.py
+```
+
+Crea `presentation/SP500_Investment_Research.pdf` (10 pagine, 16:9) da allegare via email.
 
 ## Struttura
 
