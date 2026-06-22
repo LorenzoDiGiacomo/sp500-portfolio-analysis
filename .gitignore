@@ -11,6 +11,9 @@ data/*_daily.csv
 .claude/
 .DS_Store
 
+# Copia di comodo del PDF nella root (l'originale versionato è in presentation/)
+/SP500_Investment_Research.pdf
+
 # File dati del Kaggle Dataset (rigenerati da kaggle/build_dataset.py)
 kaggle/dataset/*.csv
 kaggle/dataset/metrics.json
