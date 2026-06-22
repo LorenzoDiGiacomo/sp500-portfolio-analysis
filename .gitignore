@@ -14,6 +14,7 @@ data/*_daily.csv
 # File dati del Kaggle Dataset (rigenerati da kaggle/build_dataset.py)
 kaggle/dataset/*.csv
 kaggle/dataset/metrics.json
+kaggle/dataset/*.pdf
 
 # Credenziali (non devono MAI finire nel repo)
 kaggle.json

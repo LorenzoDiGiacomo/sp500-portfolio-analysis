@@ -35,4 +35,11 @@ for src, dst in MAPPING.items():
     else:
         print(f"  ! manca {src} (esegui ./refresh.sh)")
 
+# presentazione PDF (se presente: esegui prima analysis/build_pdf.py)
+pdf = ROOT / "presentation" / "SP500_Investment_Research.pdf"
+if pdf.exists():
+    shutil.copy(pdf, OUT / pdf.name)
+    copied += 1
+    print(f"  + {pdf.name}")
+
 print(f"Dataset assemblato in {OUT} ({copied} file).")
