@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-01T12:57:25.319247</dc:date>
+    <dc:date>2026-11-01T13:05:33.704251</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -39,43 +39,43 @@ z
    </g>
    <g id="patch_3">
     <path d="M 59.429688 43.429812 
-L 427.429262 43.429812 
-L 427.429262 73.669812 
+L 427.567219 43.429812 
+L 427.567219 73.669812 
 L 59.429688 73.669812 
 z
-" clip-path="url(#pa805266fd2)" style="fill: #b6892b"/>
+" clip-path="url(#p86c50cc5d3)" style="fill: #b6892b"/>
    </g>
    <g id="patch_4">
     <path d="M 59.429688 93.829812 
-L 484.545407 93.829812 
-L 484.545407 124.069812 
+L 484.638561 93.829812 
+L 484.638561 124.069812 
 L 59.429688 124.069812 
 z
-" clip-path="url(#pa805266fd2)" style="fill: #b6892b"/>
+" clip-path="url(#p86c50cc5d3)" style="fill: #b6892b"/>
    </g>
    <g id="patch_5">
     <path d="M 59.429688 144.229812 
-L 529.856142 144.229812 
-L 529.856142 174.469812 
+L 529.912068 144.229812 
+L 529.912068 174.469812 
 L 59.429688 174.469812 
 z
-" clip-path="url(#pa805266fd2)" style="fill: #b6892b"/>
+" clip-path="url(#p86c50cc5d3)" style="fill: #b6892b"/>
    </g>
    <g id="patch_6">
     <path d="M 59.429688 194.629812 
-L 570.559906 194.629812 
-L 570.559906 224.869812 
+L 570.578744 194.629812 
+L 570.578744 224.869812 
 L 59.429688 224.869812 
 z
-" clip-path="url(#pa805266fd2)" style="fill: #b6892b"/>
+" clip-path="url(#p86c50cc5d3)" style="fill: #b6892b"/>
    </g>
    <g id="patch_7">
     <path d="M 59.429688 245.029812 
-L 571.037827 245.029812 
-L 571.037827 275.269813 
+L 571.057354 245.029812 
+L 571.057354 275.269813 
 L 59.429688 275.269813 
 z
-" clip-path="url(#pa805266fd2)" style="fill: #b6892b"/>
+" clip-path="url(#p86c50cc5d3)" style="fill: #b6892b"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2">
@@ -111,19 +111,19 @@ z
     </g>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="416.827262" y="61.667" transform="rotate(-0 416.827262 61.667)">69%</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="416.965219" y="61.667" transform="rotate(-0 416.965219 61.667)">69%</text>
    </g>
    <g id="text_7">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="473.943407" y="112.067" transform="rotate(-0 473.943407 112.067)">80%</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="474.036561" y="112.067" transform="rotate(-0 474.036561 112.067)">80%</text>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="519.254142" y="162.467" transform="rotate(-0 519.254142 162.467)">89%</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="519.310068" y="162.467" transform="rotate(-0 519.310068 162.467)">89%</text>
    </g>
    <g id="text_9">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="559.957906" y="212.867" transform="rotate(-0 559.957906 212.867)">96%</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="559.976744" y="212.867" transform="rotate(-0 559.976744 212.867)">96%</text>
    </g>
    <g id="text_10">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="560.435827" y="263.267" transform="rotate(-0 560.435827 263.267)">97%</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #ffffff" x="560.455354" y="263.267" transform="rotate(-0 560.455354 263.267)">97%</text>
    </g>
    <g id="text_11">
     <text style="font-size: 14px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a8f98" x="59.429688" y="17.837812" transform="rotate(-0 59.429688 17.837812)">Probabilita' storica di chiudere in positivo, per orizzonte</text>
@@ -131,7 +131,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pa805266fd2">
+  <clipPath id="p86c50cc5d3">
    <rect x="59.429688" y="31.837812" width="530.1" height="255.024"/>
   </clipPath>
  </defs>
